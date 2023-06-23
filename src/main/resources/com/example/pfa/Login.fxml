@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="212.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.pfa.LoginController">
+   <children>
+      <AnchorPane layoutX="254.0" layoutY="4.0" prefHeight="394.0" prefWidth="246.0">
+         <children>
+            <Label layoutX="32.0" layoutY="123.0" text="Username" />
+            <TextField fx:id="txtUser" layoutX="34.0" layoutY="152.0" />
+            <Label layoutX="34.0" layoutY="185.0" text="Password" />
+            <TextField fx:id="txtPass" layoutX="34.0" layoutY="211.0" />
+            <Text layoutX="32.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="LOGIN">
+               <font>
+                  <Font name="Arial Bold" size="26.0" />
+               </font>
+            </Text>
+            <Button layoutX="34.0" layoutY="251.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="26.0" prefWidth="150.0" text="Login" />
+         </children>
+      </AnchorPane>
+      <Line endX="252.99996948242188" endY="410.3999938964844" startX="252.99996948242188" startY="4.000006198883057" />
+      <AnchorPane layoutY="7.0" prefHeight="360.0" prefWidth="268.0">
+         <children>
+            <Text layoutX="65.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER">
+               <font>
+                  <Font name="Arial Bold" size="27.0" />
+               </font>
+            </Text>
+            <TextField fx:id="txtRegUser" layoutX="58.0" layoutY="147.0" />
+            <TextField fx:id="txtRegPass" layoutX="58.0" layoutY="207.0" />
+            <Label layoutX="56.0" layoutY="119.0" text="UserName" />
+            <Label layoutX="59.0" layoutY="179.0" text="Password" />
+            <Button layoutX="59.0" layoutY="247.0" mnemonicParsing="false" onAction="#onRegister" prefHeight="26.0" prefWidth="150.0" text="Register" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
